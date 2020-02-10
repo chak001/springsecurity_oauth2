@@ -1,0 +1,19 @@
+
+
+server:
+  port: 9001
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql://192.168.70.135:3306/security?serverTimezone=GMT%2B8&autoReconnect=true&useSSL=false
+  main:
+    allow-bean-definition-overriding: true   # ??????????OAuth2??????bean????????
+mybatis:
+  type-aliases-package: com.itheima.oauth_server.domain
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.itheima.oauth_server: debug
