@@ -1,12 +1,14 @@
 package com.itheima.oauth_server.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 
 /**
  * @author john
  * @date 2020/1/11 - 20:12
  */
+@ToString
 public class SysRole implements GrantedAuthority {
     private Integer id;
     private String roleName;

@@ -1,5 +1,6 @@
 package com.itheima.oauth_server.service.impl;
 
+import com.itheima.oauth_server.domain.SysUser;
 import com.itheima.oauth_server.mapper.UserMapper;
 import com.itheima.oauth_server.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userMapper.findByUsername(username);
+        SysUser byUsername = userMapper.findByUsername(username);
+        return byUsername;
     }
 }

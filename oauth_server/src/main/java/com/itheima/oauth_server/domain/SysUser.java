@@ -1,6 +1,7 @@
 package com.itheima.oauth_server.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * @author john
  * @date 2020/1/11 - 20:15
  */
+@ToString
 public class SysUser implements UserDetails {
     private Integer id;
     private String username;
