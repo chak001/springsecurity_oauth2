@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
-@MapperScan("com.itheima.oauth_resource.mapper")
+@MapperScan("com.itheima.mapper")
 public class OauthResourceApplication {
 
     public static void main(String[] args) {

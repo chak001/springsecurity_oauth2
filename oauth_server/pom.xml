@@ -60,7 +60,12 @@
             <version>2.1.5</version>
         </dependency>
 
-
+        <!--配置flyway 依赖以及插件-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>6.2.3</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -83,6 +88,16 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+
+                <configuration>
+                    <url>jdbc:mysql://192.168.70.140:3306/security?serverTimezone=GMT%2B8&amp;autoReconnect=true&amp;useSSL=false</url>
+                    <user>root</user>
+                    <password>root</password>
+                </configuration>
             </plugin>
         </plugins>
     </build>

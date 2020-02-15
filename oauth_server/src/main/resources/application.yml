@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     password: root
     username: root
-    url: jdbc:mysql://192.168.70.135:3306/security?serverTimezone=GMT%2B8&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://192.168.70.140:3306/security?serverTimezone=GMT%2B8&autoReconnect=true&useSSL=false
   main:
     allow-bean-definition-overriding: true    #这个表示允许我们覆盖OAuth2放在容器中的bean对象，一定要配置
   configuration:

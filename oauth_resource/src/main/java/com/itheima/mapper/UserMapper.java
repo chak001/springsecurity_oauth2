@@ -22,7 +22,7 @@ public interface UserMapper extends Mapper<SysUser> {
    @Results({
             @Result(id = true, property = "id", column = "id"),
             @Result(property = "roles", column = "id", javaType = List.class,
-                    many = @Many(select = "com.itheima.oauth_resource.mapper.RoleMapper.findByUid"))
+                    many = @Many(select = "com.itheima.mapper.RoleMapper.findByUid"))
     })
     public SysUser findByUsername(String username);
 }
