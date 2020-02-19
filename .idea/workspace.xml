@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55b58130-8003-48cb-9412-c4f040cbfca9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_resource/src/main/java/com/itheima/config/CustomerAccessTokenConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_resource/src/main/java/com/itheima/config/CustomerEnhancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_resource/src/main/resources/publicKey.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/config/CustomerAccessTokenConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/config/CustomerEnhancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/utils/Payload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/utils/RsaUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth_server/src/main/resources/mytest.jks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_resource/src/main/java/com/itheima/config/ResourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_resource/src/main/java/com/itheima/config/ResourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_resource/src/main/java/com/itheima/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_resource/src/main/java/com/itheima/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/config/OauthServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/config/OauthServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springsecurity_oauth2.iml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@192.168.70.140" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="springsecurity_oauth2" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1XbA8Jk5ShVZbEYDkNXFTr2ilUO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/oauth_resource/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaProgram-chak\springsecurity_oauth2\oauth_server\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itheima.config" />
+      <recent name="com.itheima.utils" />
+      <recent name="com.itheima.oauth_server.exception" />
+      <recent name="com.itheima.oauth_resource.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProgram-chak\springsecurity_oauth2_JWT\oauth_resource\src\main\resources" />
+      <recent name="D:\ideaProgram-chak\springsecurity_oauth2_JWT\oauth_server\src\main\resources" />
+      <recent name="D:\ideaProgram-chak\springsecurity_oauth2_JWT\oauth_server\src\main\java\com\itheima\utils" />
+      <recent name="D:\ideaProgram-chak\springsecurity_oauth2" />
+      <recent name="D:\ideaProgram-chak\springsecurity_oauth2\oauth_server\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OauthServerApplication">
+    <configuration name="OauthResourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="oauth_resource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.OauthResourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oauth_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.OauthServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OauthResourceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55b58130-8003-48cb-9412-c4f040cbfca9" name="Default Changelist" comment="" />
+      <created>1581304259966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581304259966</updated>
+      <workItem from="1581304262894" duration="15354000" />
+      <workItem from="1581383116841" duration="18100000" />
+      <workItem from="1581408467524" duration="41873000" />
+      <workItem from="1581565703584" duration="17537000" />
+      <workItem from="1581641724752" duration="12003000" />
+      <workItem from="1581757933391" duration="4002000" />
+      <workItem from="1581900951907" duration="37885000" />
+      <workItem from="1582019409321" duration="5049000" />
+    </task>
+    <task id="LOCAL-00001" summary="update the code">
+      <created>1581486918418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581486918418</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update:lasted">
+      <created>1581588205552</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581588205552</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update the code" />
+    <MESSAGE value="update:lasted" />
+    <MESSAGE value="add utils工具类" />
+    <option name="LAST_COMMIT_MESSAGE" value="add utils工具类" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/request/DefaultOAuth2RequestFactory.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth_server/src/main/java/com/itheima/service/impl/UserServiceImpl.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/client/ClientCredentialsTokenEndpointFilter.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oauth_resource/src/main/java/com/itheima/controller/ProductController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/store/JdbcTokenStore.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/DefaultTokenServices.java</url>
+          <line>228</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/DefaultTokenServices.java</url>
+          <line>288</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/DefaultTokenServices.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/DefaultTokenServices.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/DefaultTokenServices.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/store/JdbcTokenStore.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/token/store/JdbcTokenStore.java</url>
+          <line>161</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/common/util/SerializationUtils.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.2.2.RELEASE/spring-jdbc-5.2.2.RELEASE-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java</url>
+          <line>789</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/common/util/SerializationUtils.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/common/util/SerializationUtils.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.2.2.RELEASE/spring-security-oauth2-2.2.2.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/code/JdbcAuthorizationCodeServices.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="redirectUriParameter" />
+        <watch expression="resolvedRedirect" language="JAVA" />
+        <watch expression="tokenRequest" />
+        <watch expression="auth" />
+        <watch expression="storedAuth" />
+        <watch expression="combinedParameters" />
+        <watch expression="userAuth" />
+        <watch expression="client" />
+        <watch expression="args" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

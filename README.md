@@ -1,6 +1,8 @@
 # [springboot和springsecurity整合OAuth2](https://www.cnblogs.com/ifme/p/12188982.html)
 https://www.cnblogs.com/ifme/p/12188982.html
 
+参考: https://www.jianshu.com/p/c2395772bc86
+
 ## 1\. OAuth2.0介绍
 
 

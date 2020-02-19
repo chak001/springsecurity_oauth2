@@ -3,8 +3,11 @@ package com.itheima.config;
 import com.itheima.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
@@ -17,10 +20,19 @@ import org.springframework.security.oauth2.provider.approval.JdbcApprovalStore;
 import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
 import org.springframework.security.oauth2.provider.code.AuthorizationCodeServices;
 import org.springframework.security.oauth2.provider.code.JdbcAuthorizationCodeServices;
-import org.springframework.security.oauth2.provider.token.TokenStore;
+import org.springframework.security.oauth2.provider.token.*;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
+import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
+import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
+import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory;
 
 import javax.sql.DataSource;
+import java.security.KeyPair;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 
 
 /**
@@ -45,6 +57,9 @@ public class OauthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
+    @Autowired
+    private ApplicationContext applicationContext;
+
     public OauthServerConfig(DataSource dataSource) {
         this.dataSource = dataSource;
     }
@@ -58,10 +73,37 @@ public class OauthServerConfig extends AuthorizationServerConfigurerAdapter {
     }
 
     //token保存策略
-    @Bean
+/*    @Bean
     public TokenStore tokenStore() {
         return new JdbcTokenStore(dataSource);
+    }*/
+    @Bean
+    public TokenStore tokenStore() {
+        return new JwtTokenStore(jwtaccessTokenConverter());
     }
+
+    //accessTokenConverter 转换器;
+
+    @Bean
+    public JwtAccessTokenConverter jwtaccessTokenConverter() {
+        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+      //  converter.setSigningKey("key");
+        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("mytest.jks"),"mypass".toCharArray());
+        converter.setKeyPair(keyStoreKeyFactory.getKeyPair("mytest"));
+       converter.setAccessTokenConverter(new CustomerAccessTokenConverter()); //自定义token信息中添加的信息
+        return converter;
+    }
+
+/*    private JwtAccessTokenConverter jwtTokenEnhancer() {
+
+        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource("cnsesan-jwt.jks"),
+                "cnsesan123".toCharArray());
+        JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
+        converter.setSigningKey("mypassword");
+        converter.setKeyPair(keyStoreKeyFactory.getKeyPair("cnsesan-jwt"));
+        return converter;
+    }
+    */
 
     //授权信息保存策略
     @Bean
@@ -122,8 +164,27 @@ public class OauthServerConfig extends AuthorizationServerConfigurerAdapter {
                 .authenticationManager(authenticationManager)
                 .authorizationCodeServices(authorizationCodeServices())
                 .tokenStore(tokenStore())
-                .userDetailsService(userService);
+                .userDetailsService(userService)
+                .tokenServices(tokenServices())
+                .allowedTokenEndpointRequestMethods(HttpMethod.POST);
     }
 
+    @Bean
+    public AuthorizationServerTokenServices tokenServices() {
+        Collection<TokenEnhancer> tokenEnhancers = applicationContext.getBeansOfType(TokenEnhancer.class).values();
+        TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
+        tokenEnhancerChain.setTokenEnhancers(new ArrayList<>(tokenEnhancers));
+
+        DefaultTokenServices tokenServices = new DefaultTokenServices();
+        tokenServices.setClientDetailsService(clientDetailsService());
+        tokenServices.setReuseRefreshToken(true);
+        tokenServices.setSupportRefreshToken(true);
+        tokenServices.setTokenStore(tokenStore());
+        tokenServices.setAccessTokenValiditySeconds(60*60*3);
+        tokenServices.setRefreshTokenValiditySeconds(60*60*24*3);
+
+        tokenServices.setTokenEnhancer(tokenEnhancerChain);
+        return tokenServices;
+    }
 
 }
